@@ -603,3 +603,68 @@
   background: crimson;
   transform: scale(1.1);
 }
+
+.certifications {
+  text-align: center;
+  padding: 5rem 0;
+  background: black;
+}
+
+.certifications .heading {
+  margin-bottom: 2rem;
+}
+
+.certifications-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cert-box {
+  background: black;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.cert-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cert-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.cert-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cert-box p {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.cert-box a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.cert-box a:hover {
+  background: #0056b3;
+}
