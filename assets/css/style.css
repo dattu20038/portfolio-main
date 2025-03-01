@@ -277,28 +277,41 @@ body.active .home-text p {
 }
 
 /* About Section */
+/* About Section */
 .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem; 
+  justify-content: center;
+  max-width: 100%;
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   text-align: justify;
   color: var(--gray-300);
-  max-width: 800px;
+  max-width: 100%; /* Allows it to take full width */
+  width: 90vw; /* Expands text width across the viewport */
+  line-height: 1.8;
+  padding: 0 5vw; /* Adds padding while keeping it spacious */
 }
+
+@media (min-width: 1200px) {
+  .about-text p {
+    max-width: 1100px; /* Limits max width on larger screens */
+  }
+}
+
 
 body.active .about-text p {
   color: var(--gray-600);
 }
 
 .information {
-  margin: 2rem 0;
+  margin: 3rem 0; /* Increased margin for spacing */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -309,9 +322,9 @@ body.active .about-text p {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.8rem; /* Increased padding for a more spacious look */
   background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem; /* Slightly rounded corners */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -325,12 +338,13 @@ body.active .information .info-box {
 }
 
 .information .info-box .bx {
-  font-size: 1.5rem;
+  font-size: 1.6rem; /* Slightly larger icons */
   color: var(--primary);
 }
 
 .information .info-box span {
   font-weight: 500;
+  font-size: 1rem; /* Adjusted font size */
 }
 
 .information .info-box span a {
